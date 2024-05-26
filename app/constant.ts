@@ -97,8 +97,8 @@ export const Azure = {
 };
 
 export const Google = {
-  ExampleEndpoint: "https://chat12138-coze.zeabur.app/",
-  ChatPath: "v1/chat/completions",
+  ExampleEndpoint: "https://generativelanguage.googleapis.com/",
+  ChatPath: (modelName: string) => `v1beta/models/${modelName}:generateContent`,
 };
 
 export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
